@@ -1,16 +1,14 @@
-@media (max-width: 375px){
-    iframe {
-        width: 375px;
-    }
-}
-
-// Below 768px
 @media only screen and (max-width:1024px){
     .column {
         width: 100%;
     }
 }
 
+@media (max-width: 375px){
+    .column {
+        width: 100%;
+    }
+}
 
 @import "colors";
 
@@ -22,18 +20,18 @@
 }
 
 body {
-    background-color: #F4FDAF;
+    background-color: #C9F2C7;
 }
 
 #grid-container {
     display: grid;
-    width: 100vw;
     grid-template-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
-    
+    grid-template-columns: 1fr;
 }
 
 #header-container {
     display: grid;
+    grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
     position: sticky;
@@ -44,10 +42,10 @@ body {
 
 #content-container {
     display: grid;
-    width: 100vw;
+    grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
-    grid-template-columns: 1fr;
+    
 }
 
 .logo-container {
@@ -57,7 +55,7 @@ body {
 
 .logo-image {
     width: 75%;
-    margin-left: 8%;
+    margin-left: 7.5%;
 }
 
 #phone-number {
@@ -74,7 +72,10 @@ body {
 
 #footer-container {
     display: grid;
-    width: 100vw;
+    grid-template-rows: 1fr;
+    background-color: darksalmon;
+    
+    
 }
 
 #footer-text {
@@ -84,28 +85,32 @@ body {
     font-family: $font-palettes;
     font-size: 1rem;
     color: black;
-    background-color: $background;
-
-}
-
-#content-menu-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, min-max(250px, 1fr));
     
+
 }
 
+// About-us 
 
 #content-about-container {
-    padding: 3vh 0;;
+    padding: 3vh 0;
+    
     font-family: $font-palettes;
     font-size: 1rem;
-    color: $text-color;
+    color: black
   
 }
+
+#resto-img {
+    width: 100%;
+}
+
+// Menu 
 
 
 #menu-header-container {
     display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     font-family: $font-palettes;
@@ -139,6 +144,13 @@ body {
 }
 
 
+#chicken-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, min-max(250px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+
 #chicken {
     display: grid;
     padding: 10px;
@@ -152,6 +164,13 @@ body {
     border: 1px solid red;
 }
 
+#pasta-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, min-max(250px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+
 #pasta {
     display: grid;
     padding: 10px;
@@ -163,6 +182,13 @@ body {
 }
 #pasta.menu:hover {
     border: 1px solid red;
+}
+
+#drinks-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, min-max(250px, 1fr));
+    justify-items: center;
+    align-items: center;
 }
 
 
@@ -200,3 +226,5 @@ img {
     font-size: 16px;
     font-family: $font-palettes;
 }
+
+
