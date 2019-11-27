@@ -1,10 +1,10 @@
-@media only screen and (max-width:1024px){
+ @media only screen and (max-width:1024px){
     .column {
         width: 100%;
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 601px){
     .column {
         width: 100%;
     }
@@ -20,7 +20,7 @@
 }
 
 body {
-    background-color: #C9F2C7;
+    background-color: #F6F6F6;
 }
 
 #grid-container {
@@ -35,7 +35,7 @@ body {
     justify-items: center;
     align-items: center;
     position: sticky;
-    background-color: darksalmon;
+    background-color: #484A47;
     font-family: $font-palettes;
    
 }
@@ -61,20 +61,19 @@ body {
 #phone-number {
     font-size: 1.5rem;
     font-weight: bold;
-    color: $text-color;
+    color: whitesmoke;
 }
 
-.header-link {
-    text-decoration: none;
-    font-size: 1.5rem;
+a {
+    color: darksalmon;
+    font-size: 1rem;
    
 }
 
 #footer-container {
     display: grid;
     grid-template-rows: 1fr;
-    background-color: darksalmon;
-    
+    background-color: #484A47;
     
 }
 
@@ -92,16 +91,27 @@ body {
 // About-us 
 
 #content-about-container {
-    padding: 3vh 0;
-    
-    font-family: $font-palettes;
-    font-size: 1rem;
-    color: black
+    display: grid;
+    grid-template-rows: 1fr;
+  
   
 }
 
-#resto-img {
+.resto-container {
     width: 100%;
+    padding: 3vh 0;
+}
+
+.resto-img {
+    width: 100%;
+    padding: 3vh 0;
+    
+}
+
+#about-desc {
+    font-family: $font-palettes;
+    font-size: 1rem;
+    color: black;
 }
 
 // Menu 
@@ -110,7 +120,6 @@ body {
 #menu-header-container {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     font-family: $font-palettes;
@@ -122,7 +131,7 @@ body {
 
 #pizza-menu {
     display: grid;
-    grid-template-columns: repeat(auto-fill, min-max(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-items: center;
     align-items: center;
 }
@@ -146,7 +155,7 @@ body {
 
 #chicken-menu {
     display: grid;
-    grid-template-columns: repeat(auto-fill, min-max(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-items: center;
     align-items: center;
 }
@@ -166,7 +175,7 @@ body {
 
 #pasta-menu {
     display: grid;
-    grid-template-columns: repeat(auto-fill, min-max(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-items: center;
     align-items: center;
 }
@@ -186,7 +195,7 @@ body {
 
 #drinks-menu {
     display: grid;
-    grid-template-columns: repeat(auto-fill, min-max(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-items: center;
     align-items: center;
 }
@@ -215,6 +224,7 @@ img {
     text-align: left;
     font-size: 16px;
     font-family: $font-palettes;
+    color: black;
 }
 
 .name:hover{
@@ -225,6 +235,14 @@ img {
     text-align: left;
     font-size: 16px;
     font-family: $font-palettes;
+    color: black;
 }
 
-
+#p1 {
+    display: grid;
+    background-color: yellow;
+    width: 100%;
+    font-size: 16px;
+    font-family: $font-palettes;
+    justify-content: left;
+}
