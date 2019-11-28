@@ -31,8 +31,10 @@ body {
 #header-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -48,6 +50,8 @@ body {
   display: grid;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -55,17 +59,16 @@ body {
 }
 
 .logo-container {
-  width: 20%;
+  width: 50%;
   padding: 3vh 0;
 }
 
 .logo-image {
-  width: 75%;
-  margin-left: 7.5%;
+  width: 100%;
 }
 
 #phone-number {
-  font-size: 1.5rem;
+  font-size: 1 rem;
   font-weight: bold;
   color: whitesmoke;
 }
@@ -73,6 +76,24 @@ body {
 a {
   color: darksalmon;
   font-size: 1rem;
+}
+
+#left-column {
+  width: 100%;
+  float: left;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
+}
+
+#right-column {
+  width: 100%;
+  float: right;
 }
 
 #footer-container {
@@ -92,7 +113,7 @@ a {
           align-items: center;
   font-family: sans-serif;
   font-size: 1rem;
-  color: black;
+  color: whitesmoke;
 }
 
 #content-about-container {
@@ -112,7 +133,7 @@ a {
   padding: 3vh 0;
 }
 
-#about-desc {
+p {
   font-family: sans-serif;
   font-size: 1rem;
   color: black;
@@ -141,6 +162,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: whitesmoke;
 }
 
 #pizza {
@@ -228,10 +250,6 @@ a {
   background-color: whitesmoke;
 }
 
-#drinks.menu:hover {
-  border: 1px solid red;
-}
-
 img {
   width: 100%;
 }
@@ -256,15 +274,48 @@ img {
   color: black;
 }
 
-#p1 {
+.line-column {
   display: -ms-grid;
   display: grid;
-  background-color: yellow;
-  width: 100%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  background: skyblue;
+}
+
+.line-title {
   font-size: 16px;
   font-family: sans-serif;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  text-align: left;
+}
+
+#content-location-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 30vh 10vh auto;
+      grid-template-rows: 30vh 10vh auto;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#opening-hours {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#address {
+  font-family: sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+
+iframe {
+  width: 65vw;
+  height: 50vh;
+  margin-top: -5px;
 }
 /*# sourceMappingURL=style.css.map */

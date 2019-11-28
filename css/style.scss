@@ -1,4 +1,4 @@
- @media only screen and (max-width:1024px){
+ @media only screen and (max-width: 1024px){
     .column {
         width: 100%;
     }
@@ -19,6 +19,8 @@
     
 }
 
+// home 
+
 body {
     background-color: #F6F6F6;
 }
@@ -31,7 +33,8 @@ body {
 
 #header-container {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     position: sticky;
@@ -43,23 +46,24 @@ body {
 #content-container {
     display: grid;
     grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
     
 }
 
 .logo-container {
-    width: 20%;
+    width: 50%;
     padding: 3vh 0;
 }
 
 .logo-image {
-    width: 75%;
-    margin-left: 7.5%;
+    width: 100%;
+    
 }
 
 #phone-number {
-    font-size: 1.5rem;
+    font-size: 1 rem;
     font-weight: bold;
     color: whitesmoke;
 }
@@ -70,6 +74,28 @@ a {
    
 }
 
+
+#left-column {
+    width: 100%;
+    float: left;
+
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: $font-palettes;
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+}
+
+#right-column {
+    width: 100%;
+    float: right;
+
+}
+
+    
 #footer-container {
     display: grid;
     grid-template-rows: 1fr;
@@ -83,7 +109,7 @@ a {
     align-items: center;
     font-family: $font-palettes;
     font-size: 1rem;
-    color: black;
+    color:whitesmoke;
     
 
 }
@@ -108,7 +134,7 @@ a {
     
 }
 
-#about-desc {
+p {
     font-family: $font-palettes;
     font-size: 1rem;
     color: black;
@@ -128,15 +154,13 @@ a {
 
 }
 
-
 #pizza-menu {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-items: center;
     align-items: center;
+    background-color: whitesmoke;
 }
-
-
 
 #pizza {
     display: grid;
@@ -145,9 +169,9 @@ a {
     border-radius: 10px;
     border: 1px solid black;
     background-color: whitesmoke;
-    
-    
+
 }
+
 #pizza.menu:hover {
     border: 1px solid red;
 }
@@ -210,15 +234,10 @@ a {
     background-color: whitesmoke;
     
 }
-#drinks.menu:hover {
-    border: 1px solid red;
-}
 
 img {
     width: 100%;
-    
 }
-
 .name {
     padding: 10px;
     text-align: left;
@@ -230,6 +249,7 @@ img {
 .name:hover{
     color: blue;
 }
+
 .desc-1 {
     padding: 10px;
     text-align: left;
@@ -238,11 +258,52 @@ img {
     color: black;
 }
 
-#p1 {
+
+.line-column {
     display: grid;
-    background-color: yellow;
-    width: 100%;
+    grid-template-rows: 1fr;
+    background: skyblue;
+}
+
+.line-title {
     font-size: 16px;
     font-family: $font-palettes;
-    justify-content: left;
+    text-align: left;
+    
+}
+
+
+
+
+
+// location
+
+#content-location-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 10vh auto;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+#opening-hours {
+    font-family: $font-palettes;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#address {
+    font-family: $font-palettes;
+    font-size: 22px;
+    text-align: center;
+}
+
+iframe {
+    width: 65vw;
+    height: 50vh;
+    margin-top: -5px;
+    
+
 }
