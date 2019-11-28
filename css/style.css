@@ -102,6 +102,7 @@ h2 {
 
 #right-column {
   width: 100%;
+  height: 100%;
   float: right;
 }
 
@@ -122,7 +123,7 @@ h2 {
           align-items: center;
   font-family: sans-serif;
   font-size: 1rem;
-  color: whitesmoke;
+  color: white;
 }
 
 #content-about-container {
@@ -288,13 +289,13 @@ img {
   display: grid;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  background: skyblue;
 }
 
 .line-title {
-  font-size: 16px;
+  font-size: 20px;
   font-family: sans-serif;
   text-align: left;
+  margin-left: 15px;
 }
 
 #content-location-container {
@@ -312,19 +313,20 @@ img {
 
 #opening-hours {
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
 }
 
 #address {
   font-family: sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   text-align: center;
+  margin-top: 10px;
 }
 
 iframe {
   width: 65vw;
-  height: 50vh;
+  height: 45vh;
   margin-top: -5px;
 }
 /*# sourceMappingURL=style.css.map */
