@@ -99,7 +99,7 @@ a {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: sans-serif;
   font-weight: bold;
   text-align: center;
@@ -108,12 +108,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: sans-serif;
   text-align: center;
   color: black;
   margin-left: 10px;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
 }
 
 #content-container img {
@@ -121,7 +121,21 @@ h2 {
   height: 50vh;
   padding-top: 5px;
   padding-bottom: 50px;
-  border-radius: 10px;
+  border-radius: 20px;
+}
+
+#content-container .explore {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50vw;
+  height: 5vh;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: #F2D398;
+  color: #DE1A1A;
 }
 
 #footer-container {
@@ -367,13 +381,13 @@ p {
 
 #opening-hours p {
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 
 #address {
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   margin-top: 10px;
 }
