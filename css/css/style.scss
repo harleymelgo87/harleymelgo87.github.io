@@ -1,0 +1,387 @@
+@import "colors";
+
+
+@media (max-width: 1024px) and (min-width: 375px) {
+    #header-container {
+        width: 100%;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+// home 
+
+body {
+    background-color: #F6F6F6;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-rows: minmax(10vh, auto) minmax(80vh, auto) minmax(10vh, auto);
+    grid-template-columns: 1fr;
+}
+
+#header-container {
+    display: grid;
+    grid-template-rows: 15vh 5vh 5vh 5vh 5vh;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    position: sticky;
+    background-color: #484A47;
+   
+}
+
+#content-container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+    
+}
+
+a {
+    font-family: $font-palettes;
+    font-weight: normal;;
+    color: darksalmon;
+    font-size: 1.5rem;
+   
+}
+
+#menu-container a:hover {
+    background-color: chocolate;
+    color: white;
+    
+}
+
+#about-container a:hover {
+    background-color: chocolate;
+    color: white;
+    
+}
+
+#location-container a:hover {
+    background-color: chocolate;
+    color: white;
+    
+}
+
+#logo-container  {
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo-image {
+    height: 15vh;
+    width: 35%;
+    padding-top: 10px;
+    margin-left: 125px;
+}
+
+
+#phone-number {
+    font-size: 1 rem;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#left-column {
+    width: 100%;
+    float: left;
+
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: $font-palettes;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    margin-left: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: $font-palettes;
+    text-align: center;
+    color: black;
+    margin-left: 10px;
+    padding-bottom: 70px;
+
+    
+}
+
+#content-container img { 
+    width: 90vw;
+    height: 50vh;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    
+
+}
+
+#footer-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color: #484A47;
+    
+}
+
+
+.footer-text {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: $font-palettes;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    
+
+}
+
+// About-us 
+
+#content-about-container {
+    width: 100vw;
+    height: auto;
+   
+}
+
+.resto-container {
+    width: 100%;
+    padding: 3vh 0;
+}
+
+#content-about-container .resto-container iframe {
+    width: 90vw;
+    height: 30vh;
+    margin-left: 20px;
+    
+    border-radius: 15px;
+}
+
+
+.resto-img {
+    width: 50%;
+    float: right;
+    border-radius: 25px;
+    margin-right: 5px;
+    
+}
+
+p {
+    font-family: $font-palettes;
+    text-align: unset;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 1rem;
+    color: black;
+}
+
+#gallery img {
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+
+// Menu 
+
+
+#menu-header-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    font-family: $font-palettes;
+    font-size: 18px;
+    color: black;
+
+}
+
+#pizza-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-items: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+#pizza {
+    display: grid;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    
+
+}
+
+#pizza.menu:hover {
+    border: 1px solid red;
+}
+
+
+#chicken-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+
+#chicken {
+    display: grid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    
+}
+#chicken.menu:hover {
+    border: 1px solid red;
+}
+
+#pasta-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+
+#pasta {
+    display: grid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    
+}
+#pasta.menu:hover {
+    border: 1px solid red;
+}
+
+#beverages-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+
+
+#beverages {
+    display: grid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    
+}
+
+#content-menu-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#content-menu-container .name {
+    padding: 10px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: $font-palettes;
+    font-weight: bold;
+    color: black;
+
+}
+
+#content-menu-container .name:hover{
+    color: #DE1A1A;
+}
+
+.desc-1 {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-family: $font-palettes;
+    color: black;
+}
+
+
+.line-column {
+    display: grid;
+    grid-template-rows: 1fr;
+    
+}
+
+.line-title {
+    font-size: 20px;
+    font-family: $font-palettes;
+    text-align: left;
+    margin-left: 15px;
+    
+}
+
+.order {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    width: 35vw;
+    height: 4vh;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 100px;
+    background-color: #F2D398;
+    color: #DE1A1A;
+}
+
+
+
+// location
+
+#content-location-container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 30vh 10vh auto;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+#opening-hours p {
+    font-family: $font-palettes;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#address {
+    font-family: $font-palettes;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#content-location-container .mapouter .gmap_canvas iframe {
+    width: 90vw;
+    height: 45vh;
+    margin-top: -5px;
+    border-radius: 5px;
+    
+
+}
+
