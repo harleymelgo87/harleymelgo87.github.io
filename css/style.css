@@ -2,6 +2,9 @@
   #header-container {
     width: 100%;
   }
+  #menu-header-container {
+    width: 100%;
+  }
 }
 
 * {
@@ -126,7 +129,7 @@ h1 {
 h2 {
   font-size: 18px;
   font-family: sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   color: black;
   margin-left: 10px;
 }
@@ -151,7 +154,6 @@ h2 {
 #content-container img {
   width: 50vw;
   height: 80vh;
-  margin-left: 20px;
   float: right;
 }
 
@@ -200,7 +202,7 @@ h2 {
   margin-right: 5px;
 }
 
-#about-video p {
+p {
   font-family: sans-serif;
   text-align: unset;
   margin-left: 5px;
@@ -213,7 +215,7 @@ h2 {
   width: 150px;
   height: 150px;
   padding: 3px;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-left: 20px;
 }
 
@@ -429,6 +431,15 @@ h3 {
 
 a[href*="tel:"] {
   cursor: default;
+}
+
+@media (min-width: 768px) {
+  #header-container {
+    width: 100%;
+  }
+  #menu-header-container {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1020px) {

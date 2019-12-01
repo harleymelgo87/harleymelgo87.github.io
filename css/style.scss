@@ -1,10 +1,11 @@
-@import "colors";
-  
-
 @media screen and (min-width: 375px) {
     #header-container {
         width: 100%;
     }
+    #menu-header-container {
+        width: 100%;
+    }
+    
 
 }
 
@@ -49,7 +50,7 @@ body {
 }
 
 a {
-    font-family: $font-palettes;
+    font-family: sans-serif;
     font-weight: normal;;
     color: darksalmon;
     font-size: 1.5rem;
@@ -81,10 +82,13 @@ a {
 }
 
 .logo-image {
+    display: grid;
     height: 15vh;
     width: 35%;
+    justify-items: center;
+    align-items: center;
     padding-top: 10px;
-    margin-left: 120px;
+    
 }
 
 
@@ -110,7 +114,7 @@ a {
 
 h1 {
     font-size: 24px;
-    font-family: $font-palettes;
+    font-family: sans-serif;
     font-weight: bold;
     color: black;
     margin-left: 10px;
@@ -119,8 +123,8 @@ h1 {
 
 h2 {
     font-size: 18px;
-    font-family: $font-palettes;
-    font-weight: bold;
+    font-family: sans-serif;
+    font-weight: normal;
     color: black;
     margin-left: 10px;
     
@@ -142,9 +146,7 @@ h2 {
 
 #right-column {
     width: 100%;
-    height: 70%;
-    
-    
+    height: 70%; 
     
 }
 
@@ -152,7 +154,6 @@ h2 {
 #content-container img { 
     width: 50vw;
     height: 80vh;
-    margin-left: 20px;
     float: right;
 
 }
@@ -170,7 +171,7 @@ h2 {
     display: grid;
     justify-items: center;
     align-items: center;
-    font-family: $font-palettes;
+    font-family: sans-serif;
     font-size: 1rem;
     text-align: center;
     color: white;
@@ -205,8 +206,8 @@ h2 {
     margin-right: 5px;
 }
 
-#about-video p {
-    font-family: $font-palettes;
+p {
+    font-family: sans-serif;
     text-align: unset;
     margin-left: 5px;
     margin-right: 5px;
@@ -218,7 +219,7 @@ h2 {
     width: 150px;
     height: 150px;
     padding: 3px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-left: 20px;
     
 }
@@ -231,7 +232,7 @@ h2 {
     width: 100vw;
     justify-items: center;
     align-items: center;
-    font-family: $font-palettes;
+    font-family: sans-serif;
     font-size: 18px;
     color: black;
 
@@ -352,7 +353,7 @@ h2 {
     padding: 10px;
     text-align: left;
     font-size: 16px;
-    font-family: $font-palettes;
+    font-family: sans-serif;
     color: black;
 }
 
@@ -363,7 +364,7 @@ h2 {
 
 h3 {
     background-color: #f2d398;
-    font-family: $font-palettes;
+    font-family: sans-serif;
     display: inline-block;
     padding: 15px;
     font-size: 18px;
@@ -396,14 +397,14 @@ h3 {
 }
 
 #opening-hours p {
-    font-family: $font-palettes;
+    font-family: sans-serif;
     font-size: 18px;
     text-align: center;
 
 }
 
 #address {
-    font-family: $font-palettes;
+    font-family: sans-serif;
     font-size: 18px;
     text-align: center;
     margin-bottom: 10px;
@@ -421,6 +422,16 @@ h3 {
 a[href*="tel:"] {
     cursor: default;
 }
+
+
+@media (min-width: 768px) {
+    #header-container {
+        width: 100%;
+    }
+    #menu-header-container {
+        width: 100%;
+    }
+} 
 
 
 @media (min-width: 1020px) {
